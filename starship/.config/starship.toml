@@ -3,7 +3,7 @@ format = """
 $directory\
 $git_branch\
 $git_status\
-$node\
+$nodejs\
 $rust\
 $golang\
 $python\
@@ -40,7 +40,7 @@ staged = "+"
 renamed = "»"
 deleted = "✘"
 
-[node]
+[nodejs]
 symbol = "⬢ "
 style = "bold green"
 format = "via [$symbol($version)]($style) "
