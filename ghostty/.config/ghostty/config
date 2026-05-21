@@ -1,0 +1,5 @@
+# Ghostty Custom Configuration
+
+# Use left Option as Alt for terminal shortcuts (Zellij, Vim)
+# Keep right Option for typing special macOS characters
+macos-option-as-alt = left
