@@ -1,0 +1,51 @@
+layout {
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        children
+    }
+
+    tab name="Editor" focus=true {
+        pane command="nvim" {
+            cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+            args "."
+        }
+    }
+
+    tab name="Dev Stack" {
+        pane split_direction="vertical" {
+            pane name="Next.js Server" command="npm" {
+                cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+                args "run" "dev"
+            }
+            pane split_direction="horizontal" {
+                pane name="Supabase DB & Migrations" command="zsh" {
+                    cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+                    args "-c" "echo '=== Supabase Development Stack ==='; supabase status; echo ''; echo 'Use this pane for Supabase / DB migrations.'; zsh"
+                }
+                pane name="CLI / Console" {
+                    cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+                }
+            }
+        }
+    }
+
+    tab name="Testing" {
+        pane name="Jest Test Watcher" command="npm" {
+            cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+            args "run" "test:watch"
+        }
+    }
+
+    tab name="Git & Shell" {
+        pane split_direction="vertical" {
+            pane name="Git Terminal" {
+                cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+            }
+            pane name="Antigravity / Tools" {
+                cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+            }
+        }
+    }
+}
