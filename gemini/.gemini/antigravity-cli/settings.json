@@ -1,0 +1,18 @@
+{
+  "colorScheme": "tokyo night",
+  "model": "Gemini 3.5 Flash (Medium)",
+  "notifications": true,
+  "permissions": {
+    "allow": [
+      "command(ls)",
+      "command(find)",
+      "command(git status)",
+      "command(mkdir)"
+    ]
+  },
+  "trustedWorkspaces": [
+    "/Users/dskoziol/Documents/Code/github/dskoziol/antigravity_sandbox",
+    "/Users/dskoziol/Documents/Code/github/dskoziol/dotfiles",
+    "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+  ]
+}
