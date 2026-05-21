@@ -1,0 +1,10 @@
+// Zellij custom configuration
+
+// Choose a clean theme
+theme "dracula"
+
+// Hide pane frames for a modern, borderless visual look
+pane_frames false
+
+// Default layout to load on startup
+default_layout "compact"
