@@ -8,7 +8,9 @@
       "command(find)",
       "command(git status)",
       "command(mkdir)",
-      "command(cat)"
+      "command(cat)",
+      "command(npm exec mcp-remote https://mcp.vercel.com)",
+      "command(npm exec mcp-remote)"
     ]
   },
   "trustedWorkspaces": [
