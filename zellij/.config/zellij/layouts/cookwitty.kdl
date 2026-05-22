@@ -39,8 +39,9 @@ layout {
     }
 
     tab name="Antigravity" {
-        pane name="Antigravity Workspace" {
+        pane name="Antigravity Workspace" command="agy" {
             cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+            args "--conversation" "329b3529-f69d-40e2-bcf3-200b33994de3"
         }
     }
 
