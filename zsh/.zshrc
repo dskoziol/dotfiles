@@ -27,7 +27,7 @@ export PATH="/Users/dskoziol/.antigravity-ide/antigravity-ide/bin:$PATH"
 export PATH="/Users/dskoziol/.local/bin:$PATH"
 
 # Project shortcuts
-alias cookwitty="zellij attach -c cookwitty --layout cookwitty"
+alias cookwitty="zellij --layout cookwitty attach -c cookwitty"
 
 # Setup Starship prompt
 eval "$(starship init zsh)"
