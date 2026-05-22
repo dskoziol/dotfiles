@@ -7,7 +7,8 @@
       "command(ls)",
       "command(find)",
       "command(git status)",
-      "command(mkdir)"
+      "command(mkdir)",
+      "command(cat)"
     ]
   },
   "trustedWorkspaces": [
