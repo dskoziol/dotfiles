@@ -27,6 +27,7 @@ export PATH="/Users/dskoziol/.antigravity-ide/antigravity-ide/bin:$PATH"
 export PATH="/Users/dskoziol/.local/bin:$PATH"
 
 # Project shortcuts
+unalias cookwitty 2>/dev/null
 cookwitty() {
     if [[ "$1" == "-n" || "$1" == "--new" || "$1" == "--fresh" ]]; then
         echo "Clearing cached session and starting fresh..."
