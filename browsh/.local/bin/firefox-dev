@@ -1,0 +1,2 @@
+#!/bin/bash
+exec "/Applications/Firefox Developer Edition.app/Contents/MacOS/firefox" "$@"
