@@ -27,7 +27,13 @@ export PATH="/Users/dskoziol/.antigravity-ide/antigravity-ide/bin:$PATH"
 export PATH="/Users/dskoziol/.local/bin:$PATH"
 
 # Project shortcuts
-alias cookwitty="zellij --layout cookwitty attach -c cookwitty"
+cookwitty() {
+    if [[ "$1" == "-n" || "$1" == "--new" || "$1" == "--fresh" ]]; then
+        echo "Clearing cached session and starting fresh..."
+        zellij kill-session cookwitty 2>/dev/null
+    fi
+    zellij --layout cookwitty attach -c cookwitty
+}
 
 # Setup Starship prompt
 eval "$(starship init zsh)"
