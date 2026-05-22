@@ -31,7 +31,7 @@ unalias cookwitty 2>/dev/null
 cookwitty() {
     if [[ "$1" == "-n" || "$1" == "--new" || "$1" == "--fresh" ]]; then
         echo "Clearing cached session and starting fresh..."
-        zellij kill-session cookwitty 2>/dev/null
+        zellij delete-session -f cookwitty 2>/dev/null
     fi
     zellij --layout cookwitty attach -c cookwitty
 }
