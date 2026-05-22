@@ -38,14 +38,15 @@ layout {
         }
     }
 
+    tab name="Antigravity" {
+        pane name="Antigravity Workspace" {
+            cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+        }
+    }
+
     tab name="Git & Shell" {
-        pane split_direction="vertical" {
-            pane name="Git Terminal" {
-                cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
-            }
-            pane name="Antigravity / Tools" {
-                cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
-            }
+        pane name="Git Terminal & Shell" {
+            cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
         }
     }
 }
