@@ -36,3 +36,10 @@ Before making any file changes or planning a task, you MUST check the `$__CFBund
 - **Package Organization:** Place the configuration file within the appropriate package folder inside the dotfiles repository, matching its relative path under the home directory (e.g., `dotfiles/<package-name>/.config/...` or `dotfiles/<package-name>/.gemini/...`).
 - **Symlink Creation:** Always use GNU Stow to symlink the configuration file from the dotfiles repository back to its target global path in the home directory (`~`).
 - **Version Control:** Ensure all new or updated configuration files are added and committed to the Git history of the dotfiles repository.
+
+---
+
+## 6. Question vs. Command Modes (Action Boundaries)
+- **Conceptual Questions:** When the user is asking an investigatory, theoretical, or conceptual question (e.g. "how does X work?", "what's the difference between Y and Z?", "why does this fail?"), you MUST NOT make any direct codebase edits, create files, or execute modifying commands.
+- **Commands & Directives:** You are only allowed to edit files or execute terminal commands directly when the user has issued an explicit command or instruction to perform an action (e.g., "set up X", "add Y to config", "install Z").
+- **Research during Questions:** If the user asks a question and you feel running research/diagnostic commands (such as grepping files, listing directories, searching the web, or running diagnostics) is necessary to provide a high-quality answer, you MUST ask the user for explicit permission first before executing those commands.
