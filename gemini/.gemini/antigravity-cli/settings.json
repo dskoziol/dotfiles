@@ -10,7 +10,8 @@
       "command(mkdir)",
       "command(cat)",
       "command(npm exec mcp-remote https://mcp.vercel.com)",
-      "command(npm exec mcp-remote)"
+      "command(npm exec mcp-remote)",
+      "command(git diff)"
     ]
   },
   "trustedWorkspaces": [
