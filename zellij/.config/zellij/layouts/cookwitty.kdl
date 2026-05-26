@@ -1,13 +1,19 @@
 layout {
     default_tab_template {
+        children
         pane size=1 borderless=true {
             plugin location="zellij:compact-bar"
         }
-        children
     }
 
-    tab name="Editor" focus=true {
-        pane command="nvim" {
+    tab name="Shell" focus=true {
+        pane name="Shell & Git" borderless=true {
+            cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
+        }
+    }
+
+    tab name="Editor" {
+        pane name="Editor (Neovim)" command="nvim" borderless=true {
             cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
             args "."
         }
@@ -32,22 +38,16 @@ layout {
     }
 
     tab name="Testing" {
-        pane name="Jest Test Watcher" command="npm" {
+        pane name="Jest Test Watcher" command="npm" borderless=true {
             cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
             args "run" "test:watch"
         }
     }
 
     tab name="Antigravity" {
-        pane name="Antigravity Workspace" command="agy" {
+        pane name="Antigravity Workspace" command="agy" borderless=true {
             cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
             args "--conversation" "329b3529-f69d-40e2-bcf3-200b33994de3"
-        }
-    }
-
-    tab name="Git & Shell" {
-        pane name="Git Terminal & Shell" {
-            cwd "/Users/dskoziol/Documents/Code/github/dskoziol/cookwitty"
         }
     }
 }
