@@ -38,3 +38,7 @@ cookwitty() {
 
 # Setup Starship prompt
 eval "$(starship init zsh)"
+
+# opencode
+export PATH=/Users/dskoziol/.opencode/bin:$PATH
+export PATH="$HOME/.opencode/bin:$PATH"
